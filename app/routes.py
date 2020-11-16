@@ -20,7 +20,7 @@ def before_request():
 def index():
     posts = [
         {
-            'author': {'username': 'John'},
+            'author': {'username': 'user'},
             'body': 'Beautiful day in Portland!'
         },
         {
