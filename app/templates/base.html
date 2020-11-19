@@ -3,7 +3,7 @@
         {% if title %}
         <title>{{ title }} - Microblog</title>
         {% else %}
-        <title>Edit profile</title>
+        <title>Welcome to Microblog</title>
         {% endif %}
     </head>
     <body>
@@ -28,9 +28,6 @@
         </ul>
         {% endif %}
         {% endwith %}
-        
-        {% block content %}
-        
-        {% endblock %}
-    </body>
+        {% block content %}{% endblock %}
+  </body>
 </html>
