@@ -59,7 +59,7 @@ class User(UserMixin, db.Model):
         own = Post.query.filter_by(user_id=self.id)
         return followed.union(own).order_by(Post.timestamp.desc())
 
-
+ 
 @login.user_loader
 def load_user(id):
     return User.query.get(int(id))
