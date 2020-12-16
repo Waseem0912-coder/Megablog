@@ -8,6 +8,7 @@ from flask_migrate import Migrate
 from flask_login import LoginManager
 from flask_mail import Mail
 from config import Config
+from flask_bootstrap import Bootstrap
 
 
 app = Flask(__name__)
@@ -48,3 +49,5 @@ if not app.debug:
     app.logger.info('Microblog startup')
 
 from app import routes, models, errors
+
+bootstrap = Bootstrap(app)
